@@ -6,7 +6,7 @@ import { Phone } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative min-h-[80vh] overflow-hidden mt-20">
+    <section className="relative min-h-[50vh] md:min-h-[80vh] overflow-hidden mt-20">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img src="/images/plumbing-8.jpg" alt="Plumber fixing a leaking pipe" className="h-full w-full object-cover" />
@@ -15,7 +15,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container relative mx-auto flex min-h-[80vh] items-center px-8 py-20 md:px-12">
+      <div className="container relative mx-auto flex min-h-[50vh] md:min-h-[80vh] items-center px-8 py-20 md:px-12">
         <div className="max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

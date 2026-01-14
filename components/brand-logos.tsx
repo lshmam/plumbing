@@ -31,7 +31,8 @@ export function BrandLogos() {
                                 <img
                                     src={brand.logo}
                                     alt={`${brand.name} logo`}
-                                    className="h-12 w-auto object-contain opacity-60 transition-opacity duration-300 group-hover:opacity-100 md:h-16"
+                                    className={`w-auto object-contain opacity-60 transition-opacity duration-300 group-hover:opacity-100 ${brand.name === "Kohler" ? "h-10 md:h-14" : "h-8 md:h-10 max-w-[140px]"
+                                        }`}
                                 />
                             </motion.div>
                         ))}
